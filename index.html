@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Player de Música</title>
+</head>
+
+<body>
+    <main id="player">
+        <div id="container">
+            <div id="capa_album">
+                <img src="./imagem/capa.jpg" alt="capa">
+                <audio id="audio_track" src="./tracks/1.mp3"></audio>
+            </div>
+
+            <div id="informacoes_track">
+                <h4 id="album">PlanetShakers - One</h4>
+                <h2 id="track_name">Faixa1</h2>
+            </div>
+
+            <div id="duracao">
+                <div class="barra">
+                    <progress value="1" max="1"></progress>
+                    <div class="ponto"></div>
+                </div>
+                <div class="tempo">
+                    <p class="inicio">0:00</p>
+                    <p class="fim">5:00</p>
+                </div>
+                
+            </div>
+
+            <div id="player_comandos">
+                <button id="back" class="bi bi-skip-backward"></button>
+                <button id="play-pause" class="bi bi-play-fill"></button>
+                <button id="next"  class="bi bi-skip-forward"></button>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
